@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "glassy-mystery-457920-b6",
+  "private_key_id": "fa16d11d8cb1c33a29cb75ec0135e5ccd2ddc553",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCu+CrJAfpI3y8C\n364M2jIcR2W3QGPb6PtQnymv7IArYxkC3aOqEIJ31IKhdcJ0nyb4nQgn/umljaWG\n0PR928zwAqrrG6FnoWOr+JsjhvrsDXqoXlTS4gwqIUxfYyfgB72MTaCQmKKv4fsN\nH2uBr2hnm9x60uVh1nwbCHkmCLwfwOd7WB10Qrf4jUmQkxS+N7X0rfNfyWe9AbNF\nEnZlcbfbNH3we7mV2nvCR47wo2lfxoSgnjhrgecRPRHqXWZNi9irDr9gWJ12upRo\nCtOhrkmmlrYcOBA+58FnwCc2MPJ+7N8o6BEd4j8vVWx/X3IhHm3LmmpjPt0NOIrU\nbDtlQcoTAgMBAAECggEAETfiyKfP1YlWZatVbsuverub9Y358GjbsnIMoX9d7ZHG\n+FKPX0EDVdTX4MO8lcrDrwY6XeqRW6ALgK+MyoXtg6uqM5DN2sDgaiAA7wdtfKVR\nmMK6XjZYiXIqwzL4Iu0gE2/gM9qRcqAucHrTEuQMG4YUYGc4o4l+lQ/JvEXHyD1Y\njJv3hEXVEh6+e3zCmWqDSgU+kGnsOtD9UEypOQ+eyJySowCTYtK2PX4mEpsTG3QQ\na2/g879y2+16/2r4bLiI1sfPMpmk/lGz9qiilTGzs8yVhFKRdccDjAEhESwHvbGX\nN8nItl86k3x9SNj6IUMY5aE7sdU6teM/5KL6BCMVoQKBgQDWG1qHNKpICkN5XPNx\nGKl2glxYvQWg1/ZkGG3Krbbk4V7QcFBibCFXYk4oX45xNrXG0LQR9lM47Hy26R3d\ns7tlbVmuJD/P05JthCc04GxcdcdpfWvhg4GSn6BpdfyrGRBKFljhhbqureLl3ai4\nJhUpnTB9KHYRhcKM8u+lNhdphQKBgQDRNGmaQuBPOY44zKkwV3/gh7t8CDQPG8YG\nWdDorBsMcZPQxA0GecTZbKku2/qLZ39Ovdrx+HlpyesAyM32RkKMWtfrZ0AkmFvg\nD8sejMwUPjBCXqYO9o0HwwQtcBWm3BjT/7slo2CHB7QEVEzPfDsx8jS8rmO9KyJa\nFNDzQyCstwKBgB8QxvjZLl/XhWTFlNjzEBuO3KFPg9KLo0dwt/VxcRkSjjRGJ5Ow\nRsIsFFUNUFii7IsVWxtEF10qCwprFpdFbcpQrHN09QFNnHBhfWLRsUdVG4L13MJS\n12kT2i2THf8hWti1F15ZjfWsa0CZAdL+S5HHKfLu/Pqb4teapCTfjVQVAoGBAMNV\ntOScXOScUPcn4TGKAZScJ6p/3lvdCuETK8SULg1IX0QmSiMpv2tj0fQ24ZEYaf4T\nt0MHRhZIumxZEjZJFAoJKGJcXb/NortrA7TashKUnmraBSMjgjslE9l5Nj4+c9A+\nj3dtPMvXnXYNYEq7LGpORH+INQiEJecGWLNKkk+xAoGAGol0dZ0DEdSuEhZND7vA\nrUU3i60q/bOeAFSPtahUnRMq72cknT0H1kdI9N/Iiqy4/5Tff/VvMGRGHishYwqL\nC2KwADVqzMrtSl+GKPZCEw+NkOIO2ihiKiLHuWi7q+xH5qruJpFrE8Xn7RYd9q9S\nK2NrgHTgQcs+mKrnej8IfPg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dados-dinamicos@glassy-mystery-457920-b6.iam.gserviceaccount.com",
+  "client_id": "100378263820825022491",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dados-dinamicos%40glassy-mystery-457920-b6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
