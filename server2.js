@@ -18,6 +18,21 @@ const db = knex({
   }
 });
 
+app.get('/login', async (req, res) => {
+  const { email, senha } = req.query;
+
+  try {
+    await db('clientes').insert({
+      email,
+      senha,
+    });
+    res.status(200).send('Dados inseridos com sucesso!');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Erro ao inserir dados');
+  }
+});
+
 
 app.get('/lista', async (req, res) => {
   const { email, placadocarro, modelo, categoria, detalhes } = req.query;
