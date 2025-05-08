@@ -18,7 +18,30 @@ const db = knex({
   }
 });
 
-app.get('/login', async (req, res) => {
+app.post('/login', async (req, res) => {
+  const { email, senha } = req.body;
+
+  try {
+    const usuario = await db('clientes').where({ email }).first();
+
+    if (!usuario) {
+      return res.status(404).send('Usuário não encontrado');
+    }
+
+    if (usuario.senha !== senha) {
+      return res.status(401).send('Senha incorreta');
+    }
+
+    res.status(200).send('Acesso liberado');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Erro ao verificar login');
+  }
+});
+
+
+
+app.get('/cadastro', async (req, res) => {
   const { email, senha } = req.query;
 
   try {
