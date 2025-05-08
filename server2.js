@@ -18,8 +18,8 @@ const db = knex({
   }
 });
 
-app.get('/login', async (req, res) => {
-  const { email, senha } = req.query;
+app.post('/login', async (req, res) => {
+  const { email, senha } = req.body;
 
   try {
     await db('clientes').insert({
