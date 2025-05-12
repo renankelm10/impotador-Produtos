@@ -38,6 +38,15 @@ app.get('/login', async (req, res) => {
     res.status(500).send('Erro ao verificar login');
   }
 });
+app.get('/empresa', async (req, res) => {
+  try {
+    const rows = await db('empresa').select('*');
+    res.status(200).json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Erro ao buscar dados');
+  }
+});
 
 
 
