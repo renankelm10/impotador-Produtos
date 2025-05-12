@@ -22,7 +22,7 @@ app.get('/login', async (req, res) => {
   const { email, senha } = req.query;
 
   try {
-    const usuario = await db('clientes').where({ email }).first();
+    const usuario = await db('cliente').where({ email }).first();
 
     if (!usuario) {
       return res.status(404).send('Usuário não encontrado');
