@@ -96,6 +96,16 @@ app.get('/dados', async (req, res) => {
   }
 });
 
+app.get('/pedidos', async (req, res) => {
+  try {
+    const rows = await db('pedidos').select('*');
+    res.status(200).json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Erro ao buscar dados');
+  }
+});
+
 
 app.delete('/excluir/:id', async (req, res) => {
  const { id } = req.params;
