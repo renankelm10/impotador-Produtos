@@ -11,9 +11,9 @@ const db = knex({
   client: 'mysql2',
   connection: {
     host: 'sql10.freesqldatabase.com',
-    user: 'sql10776532',
+    user: 'sql10779262',
     password: 'UiAn4qPbjp',
-    database: 'sql10776532',
+    database: 'sql10779262',
     port: 3306
   }
 });
@@ -54,7 +54,7 @@ app.get('/cadastro', async (req, res) => {
   const { email, senha } = req.query;
 
   try {
-    await db('clientes').insert({
+    await db('cliente').insert({
       email,
       senha,
     });
