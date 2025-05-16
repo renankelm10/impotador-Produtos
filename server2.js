@@ -12,7 +12,7 @@ const db = knex({
   connection: {
     host: 'sql10.freesqldatabase.com',
     user: 'sql10779262',
-    password: 'UiAn4qPbjp',
+    password: 'w8TbAYSynN',
     database: 'sql10779262',
     port: 3306
   }
