@@ -13,7 +13,6 @@ const supabase = createClient(
 app.use(cors({
   origin: 'http://localhost:3000'
 }));
-// Login de usuário
 app.get('/login', async (req, res) => {
   const { email, senha } = req.query;
 

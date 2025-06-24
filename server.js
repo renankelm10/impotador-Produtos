@@ -23,17 +23,21 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-const keys = require('./glassy-mystery-457920-b6-fa16d11d8cb1.json');
+const keys = require('./ancient-wave-460821-q3-9b3b6ad7acf1.json');
 
 const client = new google.auth.JWT(
   keys.client_email,
   null,
   keys.private_key,
   ['https://www.googleapis.com/auth/spreadsheets']
+
 );
 
-const SPREADSHEET_ID = '1VS27hd9YP3Rr8QilF484A3eAOCVHtIFd9NV83xE2PlM';
-const RANGE = 'newsletter'; 
+const SPREADSHEET_ID = '1WAQNsbvIOZcRxu5DZoN63uNuPQGEvseupZU-VL6QbIw';
+const RANGE = 'Página1';
+const RANGE2 = 'pedidos';
+
+ 
 
 
 app.get('/lista', upload.single('imagem'), async (req, res) => {
@@ -47,7 +51,7 @@ app.get('/lista', upload.single('imagem'), async (req, res) => {
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: RANGE,
+      range: RANGE2,
       valueInputOption: 'USER_ENTERED',
       resource: {
         values: [[email, placadocarro, modelo, categoria, detalhes, imagem]],
@@ -71,6 +75,29 @@ app.get('/dados', async (req, res) => {
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
       range: RANGE,
+    });
+
+    const rows = response.data.values;
+    if (rows.length) {
+      res.status(200).json(rows);
+    } else {
+      res.status(404).send('Nenhum dado encontrado');
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Erro ao buscar dados da planilha');
+  }
+});
+
+app.get('/pedidos', async (req, res) => {
+  try {
+    await client.authorize();
+
+    const sheets = google.sheets({ version: 'v4', auth: client });
+
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: SPREADSHEET_ID,
+      range: RANGE2,
     });
 
     const rows = response.data.values;
